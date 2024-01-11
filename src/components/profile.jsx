@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaMapMarkerAlt, FaTwitter, FaLink, FaBuilding } from 'react-icons/fa';
 import '../App.css'
 import axios from 'axios';
 
@@ -70,19 +71,19 @@ export default function Profile ({ username, darkMode }) {
 
                         <div className="contact">
                             <div className="contact-item">
-                            <img src="./src/assets/pin.png" className="contact-image"/>
+                            <FaMapMarkerAlt className="contact-image"/>
                                 <span>{userData.location}</span>
                             </div>
                             <div className="contact-item twitter">
-                                <img src="./src/assets/twitter.png" className="contact-image"/>
+                                <FaTwitter className="contact-image"/>
                                 <span>{userData.twitter ? userData.twitter : 'Not Available'}</span>
                             </div>
                             <div className="contact-item">
-                                <img src="./src/assets/url.png" className="contact-image"/>
+                                <FaLink className="contact-image"/>
                                 <span>{userData.blog}</span>
                             </div>
                             <div className="contact-item">
-                                <img src="./src/assets/office.png" className="contact-image"/>
+                                <FaBuilding className="contact-image"/>
                                 <span>@{userData.login}</span>
                             </div>
                         </div>
