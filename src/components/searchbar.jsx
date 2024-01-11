@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
+import { FaSearch } from 'react-icons/fa';
 
 export default function Search ({ setUsername, onSearch, darkMode }) {
 
@@ -17,7 +18,7 @@ export default function Search ({ setUsername, onSearch, darkMode }) {
     return (
         <>
             <div className="search-box">
-                <img src="./src/assets/search.png"/>
+                <FaSearch/>
                 <input type="text" placeholder="Search GitHub username…"
                 value={inputValue}
                 onChange={handleInputChange}
